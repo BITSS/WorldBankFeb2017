@@ -2,7 +2,7 @@
 by [Garret Christensen](http://www.ocf.berkeley.edu/~garret)
 
 UC Berkeley ([Berkeley Initative for Transparency in the Social Sciences](http://www.bitss.org), [Berkeley Institute for Data Science](http://bids.berkeley.edu))
-### Materials for the April 2016 Reproducibility Training at the World Bank
+### Materials for the November 2016 Reproducibility Training at the World Bank
 
 The numbered files/directories will take you through the workshop in order.
 
