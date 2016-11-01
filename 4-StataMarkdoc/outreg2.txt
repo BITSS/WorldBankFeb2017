@@ -1,0 +1,12 @@
+	(1)
+VARIABLES	price
+	
+mpg	-238.9***
+	(53.08)
+Constant	11,253***
+	(1,171)
+	
+Observations	74
+R-squared	0.220
+Standard errors in parentheses	
+*** p<0.01, ** p<0.05, * p<0.1	

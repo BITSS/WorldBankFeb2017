@@ -1,0 +1,107 @@
+{smcl}
+{com}{sf}{ul off}{txt}
+{com}.          
+. 
+.              /*** 
+>              Introduction to MarkDoc (heading 1) 
+>              =================================== 
+>     
+>              Using Markdown (heading 2)
+>              -------------------------- 
+>     
+>              Writing with __markdown__ syntax allows you to add text and graphs to
+>              _smcl_ logfile and export it to a editable document format. I will demonstrate
+>              the process by using the __Auto.dta__ dataset.
+> 
+>              ###Get started with MarkDoc (heading 3)
+>              I will open the dataset, list a few observations, and export a graph.
+>              Then I will export the logfile to Microsoft Office docx format.
+>              ***/
+. 
+.      /***/ sysuse auto, clear 
+{txt}(1978 Automobile Data)
+
+{com}.      /**/  list in 1/5               
+
+     {txt}{c TLC}{hline 15}{c TT}{hline 7}{c TT}{hline 5}{c TT}{hline 7}{c TT}{hline 10}{c TT}{hline 7}{c TT}{hline 8}{c TT}{hline 8}{c TT}{hline 6}{c TRC}
+  1. {c |} make          {c |} price {c |} mpg {c |} rep78 {c |} headroom {c |} trunk {c |} weight {c |} length {c |} turn {c |}
+     {c |} {res}AMC Concord   {txt}{c |} {res}4,099 {txt}{c |} {res} 22 {txt}{c |} {res}    3 {txt}{c |} {res}     2.5 {txt}{c |} {res}   11 {txt}{c |} {res} 2,930 {txt}{c |} {res}   186 {txt}{c |} {res}  40 {txt}{c |}
+     {c LT}{hline 15}{c BT}{hline 7}{c BT}{hline 2}{c TT}{hline 2}{c BT}{hline 7}{c BT}{hline 10}{c BT}{hline 4}{c TT}{hline 2}{c BT}{hline 8}{c BT}{hline 8}{c BT}{hline 6}{c RT}
+     {c |}         displa~t         {c |}         gear_r~o         {c |}          foreign          {c |}
+     {c |}         {res}     121         {txt}{c |}         {res}    3.58         {txt}{c |}         {res}Domestic          {txt}{c |}
+     {c BLC}{hline 26}{c BT}{hline 26}{c BT}{hline 27}{c BRC}
+
+     {c TLC}{hline 15}{c TT}{hline 7}{c TT}{hline 5}{c TT}{hline 7}{c TT}{hline 10}{c TT}{hline 7}{c TT}{hline 8}{c TT}{hline 8}{c TT}{hline 6}{c TRC}
+  2. {c |} make          {c |} price {c |} mpg {c |} rep78 {c |} headroom {c |} trunk {c |} weight {c |} length {c |} turn {c |}
+     {c |} {res}AMC Pacer     {txt}{c |} {res}4,749 {txt}{c |} {res} 17 {txt}{c |} {res}    3 {txt}{c |} {res}     3.0 {txt}{c |} {res}   11 {txt}{c |} {res} 3,350 {txt}{c |} {res}   173 {txt}{c |} {res}  40 {txt}{c |}
+     {c LT}{hline 15}{c BT}{hline 7}{c BT}{hline 2}{c TT}{hline 2}{c BT}{hline 7}{c BT}{hline 10}{c BT}{hline 4}{c TT}{hline 2}{c BT}{hline 8}{c BT}{hline 8}{c BT}{hline 6}{c RT}
+     {c |}         displa~t         {c |}         gear_r~o         {c |}          foreign          {c |}
+     {c |}         {res}     258         {txt}{c |}         {res}    2.53         {txt}{c |}         {res}Domestic          {txt}{c |}
+     {c BLC}{hline 26}{c BT}{hline 26}{c BT}{hline 27}{c BRC}
+
+     {c TLC}{hline 15}{c TT}{hline 7}{c TT}{hline 5}{c TT}{hline 7}{c TT}{hline 10}{c TT}{hline 7}{c TT}{hline 8}{c TT}{hline 8}{c TT}{hline 6}{c TRC}
+  3. {c |} make          {c |} price {c |} mpg {c |} rep78 {c |} headroom {c |} trunk {c |} weight {c |} length {c |} turn {c |}
+     {c |} {res}AMC Spirit    {txt}{c |} {res}3,799 {txt}{c |} {res} 22 {txt}{c |} {res}    . {txt}{c |} {res}     3.0 {txt}{c |} {res}   12 {txt}{c |} {res} 2,640 {txt}{c |} {res}   168 {txt}{c |} {res}  35 {txt}{c |}
+     {c LT}{hline 15}{c BT}{hline 7}{c BT}{hline 2}{c TT}{hline 2}{c BT}{hline 7}{c BT}{hline 10}{c BT}{hline 4}{c TT}{hline 2}{c BT}{hline 8}{c BT}{hline 8}{c BT}{hline 6}{c RT}
+     {c |}         displa~t         {c |}         gear_r~o         {c |}          foreign          {c |}
+     {c |}         {res}     121         {txt}{c |}         {res}    3.08         {txt}{c |}         {res}Domestic          {txt}{c |}
+     {c BLC}{hline 26}{c BT}{hline 26}{c BT}{hline 27}{c BRC}
+
+     {c TLC}{hline 15}{c TT}{hline 7}{c TT}{hline 5}{c TT}{hline 7}{c TT}{hline 10}{c TT}{hline 7}{c TT}{hline 8}{c TT}{hline 8}{c TT}{hline 6}{c TRC}
+  4. {c |} make          {c |} price {c |} mpg {c |} rep78 {c |} headroom {c |} trunk {c |} weight {c |} length {c |} turn {c |}
+     {c |} {res}Buick Century {txt}{c |} {res}4,816 {txt}{c |} {res} 20 {txt}{c |} {res}    3 {txt}{c |} {res}     4.5 {txt}{c |} {res}   16 {txt}{c |} {res} 3,250 {txt}{c |} {res}   196 {txt}{c |} {res}  40 {txt}{c |}
+     {c LT}{hline 15}{c BT}{hline 7}{c BT}{hline 2}{c TT}{hline 2}{c BT}{hline 7}{c BT}{hline 10}{c BT}{hline 4}{c TT}{hline 2}{c BT}{hline 8}{c BT}{hline 8}{c BT}{hline 6}{c RT}
+     {c |}         displa~t         {c |}         gear_r~o         {c |}          foreign          {c |}
+     {c |}         {res}     196         {txt}{c |}         {res}    2.93         {txt}{c |}         {res}Domestic          {txt}{c |}
+     {c BLC}{hline 26}{c BT}{hline 26}{c BT}{hline 27}{c BRC}
+
+     {c TLC}{hline 15}{c TT}{hline 7}{c TT}{hline 5}{c TT}{hline 7}{c TT}{hline 10}{c TT}{hline 7}{c TT}{hline 8}{c TT}{hline 8}{c TT}{hline 6}{c TRC}
+  5. {c |} make          {c |} price {c |} mpg {c |} rep78 {c |} headroom {c |} trunk {c |} weight {c |} length {c |} turn {c |}
+     {c |} {res}Buick Electra {txt}{c |} {res}7,827 {txt}{c |} {res} 15 {txt}{c |} {res}    4 {txt}{c |} {res}     4.0 {txt}{c |} {res}   20 {txt}{c |} {res} 4,080 {txt}{c |} {res}   222 {txt}{c |} {res}  43 {txt}{c |}
+     {c LT}{hline 15}{c BT}{hline 7}{c BT}{hline 2}{c TT}{hline 2}{c BT}{hline 7}{c BT}{hline 10}{c BT}{hline 4}{c TT}{hline 2}{c BT}{hline 8}{c BT}{hline 8}{c BT}{hline 6}{c RT}
+     {c |}         displa~t         {c |}         gear_r~o         {c |}          foreign          {c |}
+     {c |}         {res}     350         {txt}{c |}         {res}    2.41         {txt}{c |}         {res}Domestic          {txt}{c |}
+     {c BLC}{hline 26}{c BT}{hline 26}{c BT}{hline 27}{c BRC}
+
+{com}.      histogram price
+{txt}(bin={res}8{txt}, start={res}3291{txt}, width={res}1576.875{txt})
+{res}{txt}
+{com}.      graph export graph.png,  width(400) replace
+{txt}(file graph.png written in PNG format)
+
+{com}.          
+.                         /***
+>                         You use two stars to include only output, and three stars to include 
+>                         only the command.
+>                         So two stars plus "quietly" gets you nothing.
+>                         You can also add numbers inline, but it's not quite as smooth as in R Markdown.
+>                         ***/
+.                         
+.         /**/quietly summ price
+{txt}
+{com}.         
+.         txt "Because you put it on the next command line to say the mean of Price variable is " %9.2f r(mean) " and SD is " %9.2f r(sd)
+
+
+{txt}> Because you put it on the next command line to say the mean of Price variable is 6165.26 and SD is 2949.50
+{com}. 
+.              /*** 
+>              Adding a graph or image in the report 
+>              ====================================== 
+> 
+>              Adding a graph using Markdown
+>              -----------------------------
+>     
+>              In order to add a graph using Markdown, I export the graph in PNG format.
+>              You can explain the graph in the "brackets" and define the file path in parentheses
+>              
+>              ![explain the graph](./graph.png)
+>                          
+>                          You can also export to a ton of different file types. (Thanks, pandoc!) So that's actually kind of cool.
+>              
+>                          Let's try and add math at the bottom. $y_i=\alpha+\beta_1*X_i$
+>                          ***/
+. 
+.      qui log c
+{smcl}
+{com}{sf}{ul off}

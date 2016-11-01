@@ -1,0 +1,162 @@
+{smcl}
+{com}{sf}{ul off}{txt}
+{com}.         
+.         
+.                 /***
+>                 
+>                 \documentclass{c -(}article{c )-}
+>                 
+>                 \usepackage{c -(}graphicx{c )-}   %package for inserting graphs
+>                 
+>                 \usepackage{c -(}geometry{c )-}
+>                 \geometry{c -(}
+>                 a4paper,
+>                 total={c -(}210mm,297mm{c )-},
+>                 left=20mm,
+>                 right=20mm,
+>                 top=20mm,
+>                 bottom=20mm,
+>                 {c )-}
+>                 
+>                 \usepackage{c -(}graphicx{c )-}
+>                 \usepackage{c -(}standalone{c )-}
+> 
+>                 \begin{c -(}document{c )-}
+> 
+>                 \title{c -(}Writing with \LaTeX{c -(}{c )-} in Stata Do-file Editor{c )-}
+>                 \author{c -(}E. F. Haghish{c )-}
+> 
+>                 \maketitle
+> 
+>                 \begin{c -(}abstract{c )-}
+>                 \textbf{c -(}MarkDoc{c )-} not only supports writing text using \textbf{c -(}Markdown Syntax{c )-} 
+>                 but also allows writing and styling text using \textbf{c -(}HTML{c )-} and \LaTeX{c -(}{c )-}. 
+>                 These new features will appeal only to professional users (\textit{c -(}Wierdos{c )-})
+>                 and the majority of the users will enjoy writing with Markdown. In this 
+>                 short turorial I will demonstrate how to weave a document in MarkDoc using 
+>                 \LaTeX{c -(}{c )-}. 
+>                 \end{c -(}abstract{c )-}
+> 
+>                 \section{c -(}Introduction{c )-}
+>                 There is a new feature in MarkDoc that allows you to weave your document
+>                 Using \LaTeX{c -(}{c )-}. This might only be interesting to some of you. 
+>                 
+>                 Hey look, it's math.
+>                 \begin{c -(}equation{c )-}
+>                 \label{c -(}simple_equation{c )-}
+>                 \alpha = \sqrt{c -(} \beta {c )-}
+>                 \end{c -(}equation{c )-}
+> 
+>                 \subsection{c -(}Adding Stata output{c )-}
+>                 Below I will add some Stata commands and outputs.
+>                 
+>                 \begin{c -(}verbatim{c )-}
+>                 ***/
+.                 
+.         sysuse auto, clear      
+{txt}(1978 Automobile Data)
+
+{com}.         describe
+
+{txt}Contains data from {res}C:\Program Files (x86)\Stata12\ado\base/a/auto.dta
+{txt}  obs:{res}            74                          1978 Automobile Data
+{txt} vars:{res}            12                          13 Apr 2011 17:45
+{txt} size:{res}         3,182                          (_dta has notes)
+{txt}{hline}
+              storage  display     value
+variable name   type   format      label      variable label
+{hline}
+{p 0 48}{res}{bind:make           }{txt}{bind: str18  }{bind:{txt}%-18s      }{space 1}{bind:         }{bind:  }{res}{res}Make and Model{p_end}
+{p 0 48}{bind:price          }{txt}{bind: int    }{bind:{txt}%8.0gc     }{space 1}{bind:         }{bind:  }{res}{res}Price{p_end}
+{p 0 48}{bind:mpg            }{txt}{bind: int    }{bind:{txt}%8.0g      }{space 1}{bind:         }{bind:  }{res}{res}Mileage (mpg){p_end}
+{p 0 48}{bind:rep78          }{txt}{bind: int    }{bind:{txt}%8.0g      }{space 1}{bind:         }{bind:  }{res}{res}Repair Record 1978{p_end}
+{p 0 48}{bind:headroom       }{txt}{bind: float  }{bind:{txt}%6.1f      }{space 1}{bind:         }{bind:  }{res}{res}Headroom (in.){p_end}
+{p 0 48}{bind:trunk          }{txt}{bind: int    }{bind:{txt}%8.0g      }{space 1}{bind:         }{bind:  }{res}{res}Trunk space (cu. ft.){p_end}
+{p 0 48}{bind:weight         }{txt}{bind: int    }{bind:{txt}%8.0gc     }{space 1}{bind:         }{bind:  }{res}{res}Weight (lbs.){p_end}
+{p 0 48}{bind:length         }{txt}{bind: int    }{bind:{txt}%8.0g      }{space 1}{bind:         }{bind:  }{res}{res}Length (in.){p_end}
+{p 0 48}{bind:turn           }{txt}{bind: int    }{bind:{txt}%8.0g      }{space 1}{bind:         }{bind:  }{res}{res}Turn Circle (ft.) {p_end}
+{p 0 48}{bind:displacement   }{txt}{bind: int    }{bind:{txt}%8.0g      }{space 1}{bind:         }{bind:  }{res}{res}Displacement (cu. in.){p_end}
+{p 0 48}{bind:gear_ratio     }{txt}{bind: float  }{bind:{txt}%6.2f      }{space 1}{bind:         }{bind:  }{res}{res}Gear Ratio{p_end}
+{p 0 48}{bind:foreign        }{txt}{bind: byte   }{bind:{txt}%8.0g      }{space 1}{bind:origin   }{bind:  }{res}{res}Car type{p_end}
+{txt}{hline}
+Sorted by:  {res}foreign
+{txt}
+{com}.         list in 1/3
+
+     {txt}{c TLC}{hline 13}{c TT}{hline 7}{c TT}{hline 5}{c TT}{hline 7}{c TT}{hline 10}{c TT}{hline 7}{c TT}{hline 8}{c TRC}
+  1. {c |} make        {c |} price {c |} mpg {c |} rep78 {c |} headroom {c |} trunk {c |} weight {c |}
+     {c |} {res}AMC Concord {txt}{c |} {res}4,099 {txt}{c |} {res} 22 {txt}{c |} {res}    3 {txt}{c |} {res}     2.5 {txt}{c |} {res}   11 {txt}{c |} {res} 2,930 {txt}{c |}
+     {c LT}{hline 11}{c TT}{hline 1}{c BT}{hline 7}{c +}{hline 5}{c BT}{hline 7}{c +}{hline 10}{c BT}{hline 2}{c TT}{hline 4}{c BT}{hline 8}{c RT}
+     {c |}  length   {c |}  turn   {c |}  displa~t   {c |}  gear_r~o   {c |}   foreign   {c |}
+     {c |}  {res}   186   {txt}{c |}  {res}  40   {txt}{c |}  {res}     121   {txt}{c |}  {res}    3.58   {txt}{c |}  {res}Domestic   {txt}{c |}
+     {c BLC}{hline 11}{c BT}{hline 9}{c BT}{hline 13}{c BT}{hline 13}{c BT}{hline 13}{c BRC}
+
+     {c TLC}{hline 13}{c TT}{hline 7}{c TT}{hline 5}{c TT}{hline 7}{c TT}{hline 10}{c TT}{hline 7}{c TT}{hline 8}{c TRC}
+  2. {c |} make        {c |} price {c |} mpg {c |} rep78 {c |} headroom {c |} trunk {c |} weight {c |}
+     {c |} {res}AMC Pacer   {txt}{c |} {res}4,749 {txt}{c |} {res} 17 {txt}{c |} {res}    3 {txt}{c |} {res}     3.0 {txt}{c |} {res}   11 {txt}{c |} {res} 3,350 {txt}{c |}
+     {c LT}{hline 11}{c TT}{hline 1}{c BT}{hline 7}{c +}{hline 5}{c BT}{hline 7}{c +}{hline 10}{c BT}{hline 2}{c TT}{hline 4}{c BT}{hline 8}{c RT}
+     {c |}  length   {c |}  turn   {c |}  displa~t   {c |}  gear_r~o   {c |}   foreign   {c |}
+     {c |}  {res}   173   {txt}{c |}  {res}  40   {txt}{c |}  {res}     258   {txt}{c |}  {res}    2.53   {txt}{c |}  {res}Domestic   {txt}{c |}
+     {c BLC}{hline 11}{c BT}{hline 9}{c BT}{hline 13}{c BT}{hline 13}{c BT}{hline 13}{c BRC}
+
+     {c TLC}{hline 13}{c TT}{hline 7}{c TT}{hline 5}{c TT}{hline 7}{c TT}{hline 10}{c TT}{hline 7}{c TT}{hline 8}{c TRC}
+  3. {c |} make        {c |} price {c |} mpg {c |} rep78 {c |} headroom {c |} trunk {c |} weight {c |}
+     {c |} {res}AMC Spirit  {txt}{c |} {res}3,799 {txt}{c |} {res} 22 {txt}{c |} {res}    . {txt}{c |} {res}     3.0 {txt}{c |} {res}   12 {txt}{c |} {res} 2,640 {txt}{c |}
+     {c LT}{hline 11}{c TT}{hline 1}{c BT}{hline 7}{c +}{hline 5}{c BT}{hline 7}{c +}{hline 10}{c BT}{hline 2}{c TT}{hline 4}{c BT}{hline 8}{c RT}
+     {c |}  length   {c |}  turn   {c |}  displa~t   {c |}  gear_r~o   {c |}   foreign   {c |}
+     {c |}  {res}   168   {txt}{c |}  {res}  35   {txt}{c |}  {res}     121   {txt}{c |}  {res}    3.08   {txt}{c |}  {res}Domestic   {txt}{c |}
+     {c BLC}{hline 11}{c BT}{hline 9}{c BT}{hline 13}{c BT}{hline 13}{c BT}{hline 13}{c BRC}
+
+{com}.         hist price
+{txt}(bin={res}8{txt}, start={res}3291{txt}, width={res}1576.875{txt})
+{res}{txt}
+{com}.         graph export graph.png, width(400) replace
+{txt}(file graph.png written in PNG format)
+
+{com}.         
+.                 /***
+>                 
+>                 \end{c -(}verbatim{c )-}
+>                 
+>                 
+>                 
+>                 \begin{c -(}figure{c )-}[htbp]
+>                 \centering
+>                 \includegraphics{c -(}graph.png{c )-}
+>                 \caption{c -(}This graph shows the histogram of the price variable{c )-}
+>                 \end{c -(}figure{c )-}
+>                 
+>                 
+>                 
+>                 \section{c -(}Regression{c )-}
+>                 Let's end this do-file with a regression analysis.
+> 
+>                 \begin{c -(}verbatim{c )-}
+>                 ***/
+.                 
+.         /**/ quietly regress price mpg
+{txt}
+{com}.         /**/quietly outreg2 using outreg2.tex, replace
+ : {txt}
+{com}.         
+.                 /***
+>                 
+>                 \end{c -(}verbatim{c )-}
+>                 
+>                 \section{c -(}Conclusion{c )-}
+>                 Writing a document with \LaTeX{c -(}{c )-} in \textbf{c -(}MarkDoc{c )-} is so natural and 
+>                 does not require additional options or commands. \textbf{c -(}MarkDoc{c )-} 
+>                 automatically recognizes that you are writing with \LaTeX{c -(}{c )-}. All that 
+>                 you need to do is to \textbf{c -(}export a tex file{c )-} from the options. Also 
+>                 remember not to mix HTML, \LaTeX{c -(}{c )-}, and Markdown in a single document. 
+>                 Make your mind what markup language you want to use for weaving your 
+>                 document.
+>                 
+>                 \input{c -(}outreg2.tex{c )-}
+> 
+>                 \end{c -(}document{c )-}
+>                 ***/
+.                                         
+.         qui log c
+{smcl}
+{com}{sf}{ul off}
