@@ -2,21 +2,13 @@
 by [Garret Christensen](http://www.ocf.berkeley.edu/~garret)
 
 UC Berkeley ([Berkeley Initative for Transparency in the Social Sciences](http://www.bitss.org), [Berkeley Institute for Data Science](http://bids.berkeley.edu))
-### Materials for the November 2016 Reproducibility Training at the World Bank
+### Materials for the February 2017 Reproducibility Training at the World Bank
 
 The numbered files/directories will take you through the workshop in order.
 
 First, 1-Intro features a set of slides (Beamer/LaTeX slides rendered as PDF) that discuss the reproducibility crisis in the social sciences.
 
 Second, 2-GitDemo.md is an introduction to version control with Git.
-
-Third through Fifth are a series of examples of dynamic documents--one (or two) click workflows to better organize your workflow and make it reproducible.
-
-3-StataLaTeX shows a two-step method of combining Stata and LaTeX.
-
-4-StataMarkdoc shows a one-step method in Stata using the markdoc add-on. It's still under development.
-
-5-Rmarkdown shows a complete one-stop-shop of version-controlled one-click analysis and final paper in R Studio.
 
 -----------
 
@@ -31,28 +23,6 @@ Version control is a powerful way to carefully track revisions to your documents
 ##### Optional: Specifics for Specifics Platforms
 
 Note that Github Desktop works on Mac and Windows. If you're a Linux user, you might try one of [these](https://git-scm.com/download/gui/linux). Also if you're a Windows user, the command line tool that comes with Github Desktop might not be the greatest, so you might want to download [this alternative](https://git-scm.com/download/win). If you've never used the command line before or any of this is confusing, don't worry about it and I'll try to clear it up at the workshop.  
-
-### 2. Dynamic Documents with R/R Studio and Stata
-
-Dynamic documents allow you to write just one file that contains both your analysis code and your output (i.e. your final paper) so you can easily and reproducibly manage your work. The next time you return to a figure or table after six months and think "Where on earth is the code that generated this?" it will be obvious.
-
-##### Dynamic Documents in R
-
-[R](https://www.r-project.org/) is an open source statistical analysis tool, and [R Studio](https://www.rstudio.com/products/RStudio/) is a very nice centralized tool for managing code and viewing data and output all in one program. Please download both. (At the R link, pick a location near you to download; at the R Studio link, pick R Studio Desktop.)
-
-##### Dynamic Documents in Stata
-
-Although far less well developed in Stata than in R, dynamic documents can be created using the Markdoc ado created by E.F. Haghish. To install, run the following commands in Stata:
-
-```
-ssc install markdoc
-
-ssc install weaver
-
-ssc install statax
-
-```
-You may also get some links about installing Pandoc and wkhtmltopdf. Please install those as well.
 
 ### 3. A good text editor
 
