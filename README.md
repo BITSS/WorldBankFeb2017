@@ -13,8 +13,8 @@ Second, 2-GitDemo.md is an introduction to version control with Git.
 -----------
 
 
-## Installation Instructions (See bottom for VM & internal Bank machine instructions)
-The workshop will introduce you to two major sets of tools that can help you make your workflow more reproducible: version control and dynamic documents. It will very helpful if you could install the following software programs before coming to the workshop. **Our strict preference is for the participants to install the software on personal or WBG machines** for the hands-on exercises. However, in case you have some issues with installation, we prepared VM for some of the on-site registered participants.
+## Installation Instructions (See bottom for Bank machine instructions)
+The workshop will introduce you to a tool that can help you make your workflow more reproducible: version control (Git/GitHub). You are **strongly** encouraged to install the following software programs either on your personal machine or Bank machine before coming to the workshop for the hands-on exercises. 
 
 ### 1. Version Control with Git and the Github Desktop app
 
@@ -31,11 +31,13 @@ Writing good code is facilitated by a good text editor. You can get away without
 Workshop Plan
 -------------
 =======
-## Virtual Machine & internal Bank machine environment setup
-### VM
-**_Our strict preference is for the participants to install the software on personal or WBG machines_** for the hands-on exercises. However, in case you have some issues with installation, on-site registered participants are granted an access to VM via their WBG laptop. We will provide the name of the terminal server on the day of the workshop. Please note that the VM will not be able to support all the participants.
-### Git and GitHub Desktop
-We have seen some errors using Git/GitHub Desktop from the Bank machines. If you run into SSL certificate error, run the following command:
-```
-git config --global http.sslVerify false
-```
+## Bank machine environment setup
+**_Currently, only Git app supported for the WBG machines is GitHub Desktop, and is only available to the [World Bank GitHub account](https://github.com/worldbank) pilot program participants._** You are welcome to install whatever the Git GUI apps you'd like on your personal machine. 
+
+We encourage all the participants to sign up for the World Bank GitHub pilot program as this will provide a support group within the Bank and opportunities to officially publish your reproducible code from your work. The general steps are below:
+
+1. Once you are registered for the workshop, we will send you a MOU template to join the World Bank GitHub account.
+2. If you do not have a GitHub account, please create one. You can create your account for free.
+3. Sign MOU with your name and your GitHub username, and send it to github@worldbank.org from your worldbank.org email address. (No need to physically print out and sign.)
+4. If you'd like to have GitHub Desktop installed on your Bank machine, please also include the Proprety# of your computer in the email.
+5. You will be added to the World Bank organizational account as a member (or a collaborator if you are a part time STC), and GitHub Desktop will be installed in your PC after update (please restart).
