@@ -13,12 +13,13 @@ Second, 2-GitDemo.md is an introduction to version control with Git.
 -----------
 
 
-## Installation Instructions (See bottom for Bank machine instructions)
-The workshop will introduce you to a tool that can help you make your workflow more reproducible: version control (Git/GitHub). You are **strongly** encouraged to install the following software programs either on your personal machine or Bank machine before coming to the workshop for the hands-on exercises. 
+## Installation Instructions
+The workshop will introduce you to a tool that can help you make your workflow more reproducible: version control (Git/GitHub). You are required to install the following software programs either on your personal laptop or Bank laptop before coming to the workshop for the hands-on exercises. (please remember to bring the laptop too!)
 
 ### 1. Version Control with Git and the Github Desktop app
 
 Version control is a powerful way to carefully track revisions to your documents as well as to manage collaboration. Git and Github Desktop are packaged together [here](https://desktop.github.com/). Git is the command line tool, and Github Desktop is a GUI version of the same tool. There are actually [a whole bunch of GUI apps](https://git-scm.com/downloads/guis) that can act as front ends, so you might find later that you prefer another, but we'll stick with Github Desktop for the demo.
+**_Currently, only Git app supported for the WBG machines is GitHub Desktop._** 
 
 ##### Optional: Specifics for Specifics Platforms
 
@@ -30,13 +31,4 @@ Writing good code is facilitated by a good text editor. You can get away without
 
 Workshop Plan
 -------------
-=======
-## Bank machine environment setup
-**_Currently, only Git app supported for the WBG machines is GitHub Desktop._** You are welcome to install whatever the Git GUI apps you'd like on your personal machine. You can follow the instruction above to install the app.
 
-We encourage all the participants to sign up for the World Bank GitHub pilot program as this will provide a support group within the Bank and opportunities to officially publish your reproducible code from your work. The general steps are below:
-
-1. Once you are registered for the workshop, we will send you a MOU template to join the World Bank GitHub account.
-2. If you do not have a GitHub account, please create one. You can create your account for free.
-3. Sign MOU with your name and your GitHub username, and send it to github@worldbank.org from your worldbank.org email address. (No need to physically print out and sign.)
-4. You will receive an invitation to join the World Bank organizational account as a member.
