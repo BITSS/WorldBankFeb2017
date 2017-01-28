@@ -29,6 +29,18 @@ Note that Github Desktop works on Mac and Windows. If you're a Linux user, you m
 
 Writing good code is facilitated by a good text editor. You can get away without one because you almost certainly already have a program on your computer that can save simple ASCII text files (Notepad for Windows, or TextEdit for Mac--but change the default from Rich Text to Plain Text) but modern text editors do syntax highlighting, auto-complete, and a bunch of other cool stuff for you. I suggest [Atom](http://atom.io).
 
-Workshop Plan
+Workshop Agenda
 -------------
 
+Time | Session | Speaker
+------------ | ------------- | -------------
+9:30-9:45 | Welcome and introductions | everyone
+9:45-10:45 | motivational talks: (1) Intro to transparency and reproducibility by Garret (30mins), followed by 1-2 speakers | Garret + TBD
+10:45-11 | COFFEE BREAK |
+11-12:15 | Version control part 1 | Garret
+12:15-1:15pm | LUNCH BREAK |
+1:15-2:45 | Version control part 2; including group work (hands-on session) | Garret
+2:45-3 | COFFEE BREAK |
+3-3:30 | How to get started with World Bank GitHub account | Kiwako/Andrew
+3:30-4:30 | GitHub for TTLs - How to use GitHub as a collaboration and project monitoring tool | Kiwako/Andrew
+4:30-5 | Closing discussion | Garret and Kiwako
