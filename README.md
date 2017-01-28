@@ -34,8 +34,9 @@ Workshop Agenda
 
 Time | Session | Speaker
 ------------ | ------------- | -------------
-9:30-9:45 | Welcome and introductions | everyone
-9:45-10:45 | motivational talks: (1) Intro to transparency and reproducibility by Garret (30mins), followed by 1-2 speakers | Garret + TBD
+9:30-9:45 | Welcome and introductions | Kiwako
+9:45-10:15 |Overview of transparency and reproducibility in social science research | Garret
+10:15-10:45 | Motivational talks - why version control? | Jamie (GitHub Government Team); Tariq (World Bank Global Data Editor)
 10:45-11 | COFFEE BREAK |
 11-12:15 | Version control part 1 | Garret
 12:15-1:15pm | LUNCH BREAK |
