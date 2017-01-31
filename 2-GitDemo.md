@@ -130,7 +130,7 @@ Github Desktop automatically adds any file you change to the staging area. That'
 
 > Mere anarchy is loosed upon the world,
 
-* Uncheck `README.md` and commit *only* `regressions.do` with a message like `add line on anarchy`.
+* Uncheck `regressions.do` and commit *only* `README.md` with a message like `add line on anarchy`.
 
 * Recheck `regressions.do` and commit it with a message like `add regressions.do`.
 
@@ -168,7 +168,11 @@ We'll try one quick command in the command line. (See the SWC lesson [here](http
 * Navigate (using `cd`) to inside the folder that is the repository.
 * Enter `git status` to make sure you're in your repository.
 * Enter `git log` to see the record of your changes.
-* Enter
+* Enter `git checkout <hash> <filename.txt>` where `<hash>` is the unique letter and number string refering to the place you want to jump back to and filename is the specific file.
+* Verify that the file has changed back to the point you want.
+
+
+Atlassian has a great explanation of the differences between revert, reset, and checkout.  
 
 ### Publishing (pushing and pulling):
 
