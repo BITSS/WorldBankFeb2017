@@ -170,7 +170,7 @@ We'll try one quick command in the command line. (See the SWC lesson [here](http
 * Enter `git log` to see the record of your changes.
 * Enter `git checkout <hash> <filename.txt>` where `<hash>` is the unique letter and number string refering to the place you want to jump back to and filename is the specific file.
 * Verify that the file has changed back to the point you want.
-* To get the latest version back, you can `git checkout HEAD <filename.txt>` or `git checkout master` which will send you to the tip of the `master` branch. (I know, we haven't talked about branches yet!)
+* To get the latest version back, type `git checkout HEAD <filename.txt>` or `git checkout master` which will send you to the tip of the `master` branch. (I know, we haven't talked about branches yet!)
 
 Atlassian has a great [explanation](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting) of the differences between revert, reset, and checkout.  
 
@@ -178,15 +178,16 @@ Atlassian has a great [explanation](https://www.atlassian.com/git/tutorials/rese
 
 You can store stuff online at GitHub.com (or any server with Git installed), which will enable you to work on multiple computers.
 
+Git frequently refers to `push`ing and 
+
+
 1. Just click the Publish button.
 2. Make changes online via GitHub.com.
 3. Sync with the sync button.
 
 Go back and forth between local and remote (online) changes, being sure to sync between each commit. Eventually you'll screw up and not sync enough. (That is, change a file online and commit it. Don't sync. Make a contradictory change locally and commit it. Try and sync. *What happens?*)
 
-<!--This is the branch where I do crazy stuff like adding an HTML comment.-->
-
-<!--Did you notice how above the numbering for the bulleted items is weird in the markdown doc, but when rendered, it looks nice? Thanks, Mardown!-->
+<!--Aside: This tutorial is written in Markdown. If you want something *not* to render markdown, comment it out like this. Same as HTML.-->
 
 ### Branching:
 Git uses branches to let you experiment on new ideas or bug fixes.
