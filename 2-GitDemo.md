@@ -136,21 +136,6 @@ Github Desktop automatically adds any file you change to the staging area. That'
 
 (We're using `add` to mean more than one thing here. Sorry.)
 
-* Add a fifth line to `README.md`:
->The blood-dimmed tide is loosed, and everywhere
-
-* Commit the change.
-* Add a fifth line to `README.md`:
->The ceremony of innocence is drowned;
-
-* Commit the change.
-
-
-#### Undoing
-There are several ways to undo things with git, not all of which are possible with Github Desktop. The GH methods are to:
-1. Right click on the file on the file and Discard changes. *What areas is this dealing with? Note this is like `git reset filename` on the command line.*
-
-2. Click on a change in the History section, and click on Revert.
 
 3. Click on the settings gear and click Undo latest commit.
 
