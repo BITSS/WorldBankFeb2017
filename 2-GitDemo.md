@@ -1,18 +1,71 @@
+---
+title : Introduction to git using GitHub Desktop
+part of : BITSS World Bank Feb 2017 Workshop
+time : 3 hours
+author: Garret Christensen
+affiliation: UC Berkeley
+---
+
+
 Outline of GitHub Desktop Demo
 ==============================
-BITSS World Bank Workshop, April 2016
+BITSS World Bank Workshop, February 2017
 ------------------------------
+by Garret Christensen
+
+Thanks to [Dillon Niederhut](https://github.com/deniederhut/BITSS2016) for some original materials.
+
+Essentially, we are trying to avoid a situation like this one :
+
+![http://www.phdcomics.com/comics/archive/phd101212s.gif](phd101212s.gif)
+
+And move to a situation more like this one:
+
 ![Git xkcd comic](https://imgs.xkcd.com/comics/git.png)
 
 ### To get started:
 
 1. Download and install a good text editor like [Atom](http://atom.io).
 2. Download and install the [GitHub Desktop app](http://desktop.github.com).
-3. Setup the Github Desktop app by telling it your GitHub user name (which you need to create if you haven't already).
+3. Setup the Github Desktop app by telling it your GitHub user name (which you need to [create](https://github.com/join?source=header-home) if you haven't already).
 
-Git is a version control program that helps you very accurately keep track of changes to text files, with or without collaborators. Note that .txt, .do, .R, .md, and many other files are actually text files. Others like .doc, .docx, .xls, .xlsx, .pdf, .dta, are not text files. So there's huge value in using Git and Github for your Stata script (.do) files, but there's little value in using it with your data (.dta) files.
 
-Most people use the command line to run Git, but GitHub has built an app that can do some of the simpler tasks, and that's what we'll use.
+
+### Background:
+At a fundamental level, the problem is that we do not create perfect products the first time around. We add to them, remove things from them, and revise them heavily. For word processing tasks, like the PhD Comics example, this is somewhat harmless, and really is only costing you time in finding the correct document, or some embarrassment if you send the wrong document to a colleague.
+
+You may already be collecting, cleaning, reshaping, and analyzing your data in a way that is self documenting. That is to say, you are writing it in code, and are not modifying pieces of it by hand or in a GUI. The upside to this is reproducibility. The downside is that if any of your code is the wrong version, your whole pipeline gets bunked.
+
+A fairly common workflow setup can be seen [here](https://bids.github.io/2017-01-12-ucb/lessons/R/reproducible_workflow.html). If you teach undergrads, check out [Project TIER](http://www.projecttier.org/)'s protocol.  
+
+The aspirational goal is that I should be able to sneak into your lab late at night, delete everything except for your raw data and your code, and you should be able to run a single command to regenerate EVERYTHING, including all of your results, tables, and figures in their final, polished form. Think of this as the “push button” or "one click" workflow.
+
+Unlike the situation above, when you can't find the right version of your processing pipeline, analytical workflow, or data, you also lose the ability to recreate any results that you've generated. If your results are not reproducible, then they are also :
+
+1. Not verifiable
+2. Not explainable
+3. not extendable
+
+So, we need a way to know which version of our pipeline we are using and what has changed since the last version. There are many potential solutions in this space. Some people organize their revisions by hand into series of separate folders. Others use software that logs every action they take (SPSS or STATA output logs). Yet others prefer some kind of track-changes function in their GUI.
+
+These solutions all suffer the same problem in that they force you, the user, to think about what a version is and how you are managing changes between versions. For example, if you are documenting your workflow with SPSS logs, if you want to know how you got that result you found one time last week, you have to manually search through the output from that entire day to find the code you ran but also all of the code that you ran to may or may not have led up to that result.
+
+Git, or `git`, is software that abstracts away those details. is a version control program that helps you very accurately keep track of changes to text files, with or without collaborators. Note that .txt, .do, .R, .md, and many other files are actually text files. Others like .doc, .docx, .xls, .xlsx, .pdf, .dta, are not text files. So there's huge value in using Git and Github for your Stata script (.do) files, but there's little value in using it with your data (.dta) files. However, `git` is not particularly intuitive or user friendly. In fact, the author of `git` likes to joke that its name is a reference to how obstinate and curmudgeonly it is. The downsides here are:
+
+1. Hard to understand
+2. Hard to use correctly
+
+However, the upsides are:
+
+1. Never ever accidentally deleting or otherwise losing a file
+2. Always being able to revert to your last working pipeline
+3. Easy to discover what has changed (i.e. gone wrong), and when
+
+Luckily for us, GitHub has built a GUI that makes working with `git` easier, although at some power cost. Many experienced users use the command line (Terminal on a Mac, Git Shell or Git Bash on Windows) to run Git, but GitHub Dekstop can do some of the simpler tasks, and that's what we'll use.
+
+We'll likely have to use the command line to do something. If that's scary, help is [here](http://swcarpentry.github.io/shell-novice/02-filedir/), or don't be afraid to ask.
+
+> Open the Github Desktop application 
 
 ### Cloning, Creating, and Changing:
 The options in the Github app under the "+" button are to add, create, or clone a repository. Adding is just telling the app that a repository is already on your computer. Creating creates a new repository. Cloning is copying an existing repository from your GitHub account. To clone a public repository that doesn't belong to you, click the download button that is just to the left of the "Download ZIP" button on the repository's GitHub.com page, or drag and drop the URL from your browser into the open GitHub Desktop app (oddly, there is no way to type the URL directly into the app.)  
