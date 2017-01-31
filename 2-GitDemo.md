@@ -152,6 +152,10 @@ There are several ways to undo things with git, not all of which are possible wi
 
 2. Click on a change in the History section, and click on Revert.
 
+3. Click on the settings gear and click Undo latest commit.
+
+
+
 
 
 1. Undo a commit with Revert. *Does it work if you try to revert a commit that adds a file?*
