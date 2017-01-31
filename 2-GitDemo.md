@@ -170,9 +170,9 @@ We'll try one quick command in the command line. (See the SWC lesson [here](http
 * Enter `git log` to see the record of your changes.
 * Enter `git checkout <hash> <filename.txt>` where `<hash>` is the unique letter and number string refering to the place you want to jump back to and filename is the specific file.
 * Verify that the file has changed back to the point you want.
+* To get the latest version back, you can `git checkout HEAD <filename.txt>` or `git checkout master` which will send you to the tip of the `master` branch. (I know, we haven't talked about branches yet!)
 
-
-Atlassian has a great explanation of the differences between revert, reset, and checkout.  
+Atlassian has a great [explanation](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting) of the differences between revert, reset, and checkout.  
 
 ### Publishing (pushing and pulling):
 
