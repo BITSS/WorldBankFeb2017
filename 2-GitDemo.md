@@ -190,8 +190,9 @@ Between the experimental branch and the main branch, make and commit some confli
 * Change the regression line to read `reg price mpg weight` in master. Save and commit to master.
 * Change the regression line to read `reg price mpg length, robust` in experimental. Save and commit to experimental.
 * Try and merge.
-* Resolve the conflict by editing the weird part out of the file yourself, saving, and committing. This has to be done on the command line.
+* View the conflict (`<<<<<<<` `=======` and `>>>>>>>`), resolve the conflict by editing the weird part out of the file yourself, saving, and committing.
 
+There's a conflict tutorial [here](https://bids.github.io/2017-01-12-ucb/lessons/git/).
 
 ### Publishing (pushing and pulling):
 
@@ -202,15 +203,11 @@ Git frequently refers to `push`ing (sending) and `pull`ing (retreiving). Github 
 To publish your repository on the web.
 * Just click the Publish button.
 
-Now we want to make sure that we can
+Now we want to make sure that we can make changes online via GitHub.com, and then sync them to your computer (pulling).
 
-2. Make changes online via GitHub.com.
-3. Sync with the sync button.
-
-Go back and forth between local and remote (online) changes, being sure to sync between each commit. Eventually you'll screw up and not sync enough. (That is, change a file online and commit it. Don't sync. Make a contradictory change locally and commit it. Try and sync. *What happens?*)
+* Go back and forth between making a local change, committing, and pushing it to the web, and making remote (online) changes (click the pencil button to edit, then commit at the bottom of the screen), being sure to sync between each commit. Eventually you'll screw up and not sync enough. (That is, change a file online and commit it. Don't sync. Make a contradictory change locally and commit it. Try and sync. *What happens?*)
 
 <!--Aside: This tutorial is written in Markdown. If you want something *not* to render markdown, comment it out like this. Same as HTML.-->
-
 
 
 ### Collaborating:
@@ -230,6 +227,8 @@ We'll probably only have time for #1.
 5. A sync (pull) B's changes, make your own changes, commit, and push.
 6. After handing off back and forth successfully, make simultaneous conflicting changes. *How do you resolve the conflicts?*
 7. Switch roles between A & B and repeat.
+
+If we have time for Pull Request collaboration, or you have questions, we will follow Github's [guide](https://help.github.com/desktop/guides/).
 
 ### Additional Git Topics:
 
