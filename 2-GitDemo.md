@@ -76,7 +76,7 @@ We're going to use our new GitHub account to `fork`<sup>1</sup> a repository -- 
 
 This repository will then be copied to your own account (*not* your computer), so that you can make changes to it if you like. Since the fork exists on GitHub's servers, any changes that you push to those servers means those changes are already backed up for you.
 
-* To avoid confusion, change the name of the repository to something "GitWorkshop" by clicking on settings. *By they way: what's a "repository"?*
+* To avoid confusion, change the name of the repository to something like `GitWorkshop` by clicking on settings. *By they way: what's a "repository"?*
 
 ### Cloning, Creating, and Changing:
 The options in the Github app under the "+" button are to add, create, or clone a repository. *Adding* is finding and telling the app that a repository is already on your computer. *Creating* creates a new repository. *Cloning* is copying an existing repository from your GitHub account.
@@ -84,14 +84,61 @@ The options in the Github app under the "+" button are to add, create, or clone 
 To clone a public repository that doesn't belong to you, click the download button that is just to the left of the "Download ZIP" button on the repository's GitHub.com page, or drag and drop the URL from your browser into the open GitHub Desktop app (oddly, there is no way to type the URL directly into the app.)  
 
 * Clone your fork of the workshop repository. Navigate to it on your computer to verify that it's there.
-* What files are in there? Do you see anything you don't understand? If not, try this: [Mac][Windows]
+
+* What files are in there? Do you see anything you don't understand? If not, try this: [[Mac](http://www.macworld.co.uk/how-to/mac-software/how-show-hidden-files-in-mac-os-x-finder-funter-macos-sierra-3520878/)][[Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files)]
+If you do see the hidden files, *never ever ever* mess with them.
+
+Now that you've succsefully cloned a repository, we'll create our own.
+
+* Create a new repository. Give it a name like `codepoetry` *What files are in it?*
+* Create a text file called `README.md` using your text editor. Give the file three lines of text:
+
+>Turning and turning in the widening gyre
+
+> The falcon cannot hear the falconer;
+
+> Things fall apart; the centre cannot hold;
+
+* Save the file in `codepoetry`
+
+What's different about Github Desktop?
+
+* Click on the `README.md` file in Github Desktop.
+
+Git keeps files in three areas. The workspace, the staging area, and the repository.
+![SWC Git areas](https://swcarpentry.github.io/git-novice/fig/git-staging-area.svg)
+
+Github Desktop automatically adds any file you change to the staging area. That's what the checkmark next to the file name means.
+
+* Uncheck and recheck `README.md`.
+
+* Commit, or permanently store, `README.md` by giving a concise but helpful message like `add README` in the Summary area then clicking on `Commit to master`.
+
+* Create a second file called `regressions.do` using the Stata do file editor. Give it the lines:
+
+`clear all`
+
+`set more off`
+
+`sysuse auto`
+
+`reg price mpg`
+
+* Save the .do file.
+
+* Add a fourth line of text to `README.md` and save it.
+
+> Mere anarchy is loosed upon the world,
+
+* Uncheck `README.md` and commit *only* `regressions.do` with a message like `add line on anarchy`.
+
+* Recheck `regressions.do` and commit it with a message like `add regressions.do`.
+
+(We're using `add` to mean more than one thing here. Sorry.)
 
 
-2. Create a new repository. *What files are in it?*
-1. Add a README.md
-1. Commit the changes.
-1. Make some more changes, and also add a .do file. *What do changes look like? History?*
-1. Commit the changes separately.
+
+
 1. Undo a commit with Revert. *Does it work if you try to revert a commit that adds a file?*
 2. Undo a commit with the undo menu option. *What's the difference?*
 3. Discard uncommitted changes.
