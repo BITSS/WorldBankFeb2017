@@ -7,9 +7,9 @@ affiliation: UC Berkeley
 ---
 
 
-Outline of GitHub Desktop Demo
+Git & GitHub Desktop Workshop
 ==============================
-BITSS World Bank Workshop, February 2017
+BITSS World Bank, February 2017
 ------------------------------
 by Garret Christensen
 
