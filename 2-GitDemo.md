@@ -17,18 +17,11 @@ Thanks to [Dillon Niederhut](https://github.com/deniederhut/BITSS2016) for some 
 
 Essentially, we are trying to avoid a situation like this one :
 
-![http://www.phdcomics.com/comics/archive/phd101212s.gif](phd101212s.gif)
+![http://www.phdcomics.com/comics/archive/phd101212s.gif](http://www.phdcomics.com/comics/archive/phd101212s.gif)
 
 And move to a situation more like this one:
 
 ![Git xkcd comic](https://imgs.xkcd.com/comics/git.png)
-
-### To get started:
-
-1. Download and install a good text editor like [Atom](http://atom.io).
-2. Download and install the [GitHub Desktop app](http://desktop.github.com).
-3. Setup the Github Desktop app by telling it your GitHub user name (which you need to [create](https://github.com/join?source=header-home) if you haven't already).
-
 
 
 ### Background:
@@ -65,10 +58,34 @@ Luckily for us, GitHub has built a GUI that makes working with `git` easier, alt
 
 We'll likely have to use the command line to do something. If that's scary, help is [here](http://swcarpentry.github.io/shell-novice/02-filedir/), or don't be afraid to ask.
 
-> Open the Github Desktop application 
+### To get started:
+
+* Download and install a good text editor like [Atom](http://atom.io). (If you can. If you're using a computer with install limitations, just use the built-in editor.)
+
+* Download and install the [GitHub Desktop app](http://desktop.github.com).
+
+* [Create](https://github.com/join?source=header-home) a Github.com account and username.
+
+## Forking
+
+We're going to use our new GitHub account to `fork`<sup>1</sup> a repository -- a repository for this workshop, as it just so happens!
+
+* Navigate to [github.com/BITSS/WorldBankFeb2017](github.com/BITSS/WorldBankFeb2017)
+* Look for a button that says "fork" in the upper right-hand corner
+* Click it!
+
+This repository will then be copied to your own account (*not* your computer), so that you can make changes to it if you like. Since the fork exists on GitHub's servers, any changes that you push to those servers means those changes are already backed up for you.
+
+* To avoid confusion, change the name of the repository to something "GitWorkshop" by clicking on settings. *By they way: what's a "repository"?*
 
 ### Cloning, Creating, and Changing:
-The options in the Github app under the "+" button are to add, create, or clone a repository. Adding is just telling the app that a repository is already on your computer. Creating creates a new repository. Cloning is copying an existing repository from your GitHub account. To clone a public repository that doesn't belong to you, click the download button that is just to the left of the "Download ZIP" button on the repository's GitHub.com page, or drag and drop the URL from your browser into the open GitHub Desktop app (oddly, there is no way to type the URL directly into the app.)  
+The options in the Github app under the "+" button are to add, create, or clone a repository. *Adding* is finding and telling the app that a repository is already on your computer. *Creating* creates a new repository. *Cloning* is copying an existing repository from your GitHub account.
+
+To clone a public repository that doesn't belong to you, click the download button that is just to the left of the "Download ZIP" button on the repository's GitHub.com page, or drag and drop the URL from your browser into the open GitHub Desktop app (oddly, there is no way to type the URL directly into the app.)  
+
+* Clone your fork of the workshop repository. Navigate to it on your computer to verify that it's there.
+* What files are in there? Do you see anything you don't understand? If not, try this: [Mac][Windows]
+
 
 2. Create a new repository. *What files are in it?*
 1. Add a README.md
@@ -130,3 +147,6 @@ This is how you suggest changes to repositories to which you aren't a full fledg
 Many, if not most, experienced users will use Git via the command line. (Terminal on a Mac, the Git Shell that came with the Desktop app, Windows PowerShell, there are a lot of options. They're all where you type commands for your computer to execute.) You can read why [here](http://programmers.stackexchange.com/questions/173297/why-learn-git-when-there-are-gui-apps-for-github). Basically, it's more powerful.
 
 There are a million and one online tutorials for Git in the command line. [Software Carpentry's](http://swcarpentry.github.io/git-novice/) is good, as is [Atlassian's](https://www.atlassian.com/git/tutorials/). The basic stuff is all nicely summarized [here](http://rogerdudler.github.io/git-guide/) in a single page.
+
+
+**1.** For more on forking, see [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
