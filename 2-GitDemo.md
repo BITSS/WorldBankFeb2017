@@ -182,12 +182,16 @@ Git uses branches to let you experiment on new ideas or bug fixes.
 * Oh wait, no. Emergency, you have to go back to the main (master) branch.
 * Change a different part of `regressions.do`. Add a line at the end:
 `summ length`
-Save and commit to master.
-* Merge the experimental branch into the master branch.
 
-* I admit I don't know how to do this.
+* Merge the experimental branch into the master branch. In Github Desktop this is done by clicking on Update from. Make sure you're *in* Master and Update from experimental.
 
-4. Between the experimental branch and the main branch, make some conflicting changes (that is, changes to the same lines of the same file). Then try and merge. *What happens?*
+#### Conflicts
+Between the experimental branch and the main branch, make and commit some conflicting changes (that is, changes to the same lines of the same file). Then try and merge. *What happens?*
+* Change the regression line to read `reg price mpg weight` in master. Save and commit to master.
+* Change the regression line to read `reg price mpg length, robust` in experimental. Save and commit to experimental.
+* Try and merge.
+* Resolve the conflict by editing the weird part out of the file yourself, saving, and committing. This has to be done on the command line.
+
 
 ### Publishing (pushing and pulling):
 
