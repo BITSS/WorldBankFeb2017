@@ -140,7 +140,7 @@ Github Desktop automatically adds any file you change to the staging area. That'
 >The blood-dimmed tide is loosed, and everywhere
 
 * Commit the change.
-* Add a fifth line to `README.md`:
+* Add a sixth line to `README.md`:
 >The ceremony of innocence is drowned;
 
 * Commit the change.
@@ -154,13 +154,21 @@ There are several ways to undo things with git, not all of which are possible wi
 
 3. Click on the settings gear and click Undo latest commit.
 
+Yes, you can undo an undo. Just make sure when you are undoing changes that you are looking in your text editor at the most up to date version (close the file and reopen it.)
 
+But what if you'd like to undo *all* the changes back to a certain point? [This is not possible in Github Desktop.](http://stackoverflow.com/questions/34790794/going-back-to-a-previous-commit-in-github-desktop) For that you have to use the command line.
 
+* Revert the commit that added the fifth line to `README.md`.
 
+* Revert the revert so you have the full six lines of `README.md` again.
 
-1. Undo a commit with Revert. *Does it work if you try to revert a commit that adds a file?*
-2. Undo a commit with the undo menu option. *What's the difference?*
-3. Discard uncommitted changes.
+We'll try one quick command in the command line. (See the SWC lesson [here](https://swcarpentry.github.io/git-novice/05-history/).)
+
+* Open Git Shell (Windows) or Terminal (Mac).
+* Navigate (using `cd`) to inside the folder that is the repository.
+* Enter `git status` to make sure you're in your repository.
+* Enter `git log` to see the record of your changes.
+* Enter
 
 ### Publishing (pushing and pulling):
 
