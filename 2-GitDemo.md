@@ -170,18 +170,41 @@ We'll try one quick command in the command line. (See the SWC lesson [here](http
 * Enter `git log` to see the record of your changes.
 * Enter `git checkout <hash> <filename.txt>` where `<hash>` is the unique letter and number string refering to the place you want to jump back to and filename is the specific file.
 * Verify that the file has changed back to the point you want.
-* To get the latest version back, type `git checkout HEAD <filename.txt>` or `git checkout master` which will send you to the tip of the `master` branch. (I know, we haven't talked about branches yet!)
+* To get the latest version back, type `git checkout HEAD <filename.txt>` or `git checkout master` which will send you to the tip of the `master` branch. (I know, we haven't talked about branches yet! So let's do that now.)
 
 Atlassian has a great [explanation](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting) of the differences between revert, reset, and checkout.  
+
+### Branching:
+Git uses branches to let you experiment on new ideas or bug fixes.
+
+* Create, name, and sync a new `experimental` branch with the 'create new branch' button.
+* Make changes to `regressions.do` making the regressions robust to heteroskedasticity, save, and commit them to `experimental`.
+* Oh wait, no. Emergency, you have to go back to the main (master) branch.
+* Change a different part of `regressions.do`. Add a line at the end:
+`summ length`
+Save and commit to master.
+* Merge the experimental branch into the master branch. In Github Desktop this is done by clicking on Update from. Make sure you're *in* Master and Update from experimental.
+
+#### Conflicts
+Between the experimental branch and the main branch, make and commit some conflicting changes (that is, changes to the same lines of the same file). Then try and merge. *What happens?*
+* Change the regression line to read `reg price mpg weight` in master. Save and commit to master.
+* Change the regression line to read `reg price mpg length, robust` in experimental. Save and commit to experimental.
+* Try and merge.
+* Resolve the conflict by editing the weird part out of the file yourself, saving, and committing. This has to be done on the command line.
+
+
 
 ### Publishing (pushing and pulling):
 
 You can store stuff online at GitHub.com (or any server with Git installed), which will enable you to work on multiple computers.
 
-Git frequently refers to `push`ing and 
+Git frequently refers to `push`ing (sending) and `pull`ing (retreiving). Github Desktop simplifies this and just calls it "Sync".
 
+To publish your repository on the web.
+* Just click the Publish button.
 
-1. Just click the Publish button.
+Now we want to make sure that we can
+
 2. Make changes online via GitHub.com.
 3. Sync with the sync button.
 
@@ -189,15 +212,7 @@ Go back and forth between local and remote (online) changes, being sure to sync 
 
 <!--Aside: This tutorial is written in Markdown. If you want something *not* to render markdown, comment it out like this. Same as HTML.-->
 
-### Branching:
-Git uses branches to let you experiment on new ideas or bug fixes.
 
-1. Create, name, and sync a new 'experimental' branch with the 'fork' button.
-2. Make changes, save, and commit them to 'experimental.'
-3. Oh wait, no. Emergency, you have to go back to the main (master) branch.
-	1. Change a different file or a different part of the same file. Save and commit to master.
-	2. Merge the experimental and master branches.
-4. Between the experimental branch and the main branch, make some conflicting changes (that is, changes to the same lines of the same file). Then try and merge. *What happens?*
 
 ### Collaborating:
 Thus far we've been working solo. Now we'll collaborate. GitHub is built for this. Thousands of people contribute code to large open source coding projects without ever meeting in person. It's also great for just a few people to collaborate on simpler coding projects.
